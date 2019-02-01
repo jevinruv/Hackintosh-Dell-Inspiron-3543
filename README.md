@@ -58,6 +58,28 @@ And now you have successfully changed the DVMT settings anf fixed the kernel pan
 
 ## 4. Post Install
 
+1. Assuming the USB installer is still plugged in, open Olarila Image/Files folder and copy the ESP Mounter Pro app to the Desktop .
+2. Copy the EFI folder of the USB OSX installer to the desktop and eject it
+3. Open the ESP Mounter Pro app and mount the EFI folder
+4. Delete the folders/files in the EFI partition and copy the EFI from the desktop that you copied from the USB OSX installer
+5. Go to /EFI/Clover/kexts/Other and move all the kexts to /Library/Extensions
+6. Open terminal and execute the below commands and reboot,
 
+`sudo chmod -R 755 /Library/Extensions`
+`sudo chown -R root:wheel /Library/Extensions`
+`sudo kextcache -i /`
+
+Now graphics, brightness controls and WiFi are working, but Audio is not working yet, DSDT patching is needed.
+
+## 5. DSDT & SSDT Patching
+
+
+##  Other
+### Sleep/Wake Issue
+If this issue exist please go to `/Library/Preferences` and delete all the com.apple.PowerManagement.* files then reboot
+
+macOS will re-generate the com.apple.PowerManagement* files
+
+*thanks to [this](https://www.tonymacx86.com/threads/solved-sleep-shutdown.260947/post-1814160 "this")*
 
 
