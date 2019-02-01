@@ -1,0 +1,162 @@
+7:006  3:201  Found BIOS RSDP at FDB70
+7:006  0:000  Printing ACPI tables from RSDP FDB70 ...
+7:006  0:000   FDB70: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+7:006  0:000    (Xsdt: A03C90A0, Rsdt: A03C9028)
+7:006  0:000    A03C90A0: 'XSDT', 'WN09', Rev: 1, Len: 196
+7:006  0:000    A03C9028: 'RSDT', 'WN09', Rev: 1, Len: 116
+7:006  0:000    Tables in Xsdt: 20
+7:006  0:000    0. A03E0148: 'FACP', 'WN09', Rev: 5, Len: 268
+7:006  0:000        (Dsdt: A03C91F8, Facs: A0D17F80, XDsdt: A03C91F8, XFacs: 0)
+7:006  0:000        A03C91F8: 'DSDT', 'WN09', Rev: 2, Len: 94028
+7:009  0:002        A0D17F80: 'FACS', Ver: 2, Len: 64
+7:009  0:000    1. A03E0258: 'APIC', 'WN09', Rev: 3, Len: 132
+7:009  0:000    2. A03E02E0: 'FPDT', 'WN09', Rev: 1, Len: 68
+7:009  0:000    3. A03E0328: 'FIDT', 'WN09', Rev: 1, Len: 156
+7:009  0:000    4. A03E03C8: 'MCFG', 'WN09', Rev: 1, Len: 60
+7:009  0:000    5. A03E0408: 'HPET', 'WN09', Rev: 1, Len: 56
+7:009  0:000    6. A03E0440: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+7:009  0:000    7. A03E0758: 'UEFI', '', Rev: 1, Len: 66
+7:009  0:000    8. A03E07A0: 'MSDM', 'WN09', Rev: 3, Len: 85
+7:009  0:000    9. A03E07F8: 'SSDT', 'zpodd', Rev: 1, Len: 404
+7:009  0:000    10. A03E0990: 'LPIT', '', Rev: 1, Len: 148
+7:009  0:000    11. A03E0A28: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3197
+7:009  0:000    12. A03E16A8: 'ASF!', ' HCG', Rev: 32, Len: 160
+7:009  0:000    13. A03E1748: 'SLIC', 'WN09', Rev: 1, Len: 374
+7:009  0:000    14. A03E18C0: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1337
+7:009  0:000    15. A03E1E00: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+7:009  0:000    16. A03E2978: 'SSDT', 'SaSsdt', Rev: 2, Len: 23620
+7:009  0:000    17. A03E85C0: 'DMAR', 'WN09', Rev: 1, Len: 212
+7:009  0:000    18. A03E8698: 'CSRT', 'WN09', Rev: 1, Len: 196
+7:009  0:000    19. A03E8760: 'BGRT', 'WN09', Rev: 1, Len: 56
+7:009  0:000    Tables in Rsdt: 20
+7:009  0:000    0. A03C9170: 'FACP', 'WN09', Rev: 2, Len: 132
+7:009  0:000        (Dsdt: A03C91F8, Facs: A0D17F40)
+7:009  0:000        A03C91F8: 'DSDT', 'WN09', Rev: 2, Len: 94028
+7:011  0:002        A0D17F40: 'FACS', Ver: 0, Len: 64
+7:011  0:000    1. A03E0258: 'APIC', 'WN09', Rev: 3, Len: 132
+7:011  0:000    2. A03E02E0: 'FPDT', 'WN09', Rev: 1, Len: 68
+7:011  0:000    3. A03E0328: 'FIDT', 'WN09', Rev: 1, Len: 156
+7:011  0:000    4. A03E03C8: 'MCFG', 'WN09', Rev: 1, Len: 60
+7:011  0:000    5. A03E0408: 'HPET', 'WN09', Rev: 1, Len: 56
+7:011  0:000    6. A03E0440: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+7:011  0:000    7. A03E0758: 'UEFI', '', Rev: 1, Len: 66
+7:011  0:000    8. A03E07A0: 'MSDM', 'WN09', Rev: 3, Len: 85
+7:011  0:000    9. A03E07F8: 'SSDT', 'zpodd', Rev: 1, Len: 404
+7:011  0:000    10. A03E0990: 'LPIT', '', Rev: 1, Len: 148
+7:011  0:000    11. A03E0A28: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3197
+7:011  0:000    12. A03E16A8: 'ASF!', ' HCG', Rev: 32, Len: 160
+7:011  0:000    13. A03E1748: 'SLIC', 'WN09', Rev: 1, Len: 374
+7:011  0:000    14. A03E18C0: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1337
+7:011  0:000    15. A03E1E00: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+7:011  0:000    16. A03E2978: 'SSDT', 'SaSsdt', Rev: 2, Len: 23620
+7:011  0:000    17. A03E85C0: 'DMAR', 'WN09', Rev: 1, Len: 212
+7:011  0:000    18. A03E8698: 'CSRT', 'WN09', Rev: 1, Len: 196
+7:011  0:000    19. A03E8760: 'BGRT', 'WN09', Rev: 1, Len: 56
+7:011  0:000  Found UEFI Acpi 2.0 RSDP at A03C9000
+7:011  0:000  Saving ACPI tables from RSDP A03C9000 to EFI\CLOVER\ACPI\origin ...
+7:011  0:000   A03C9000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+7:011  0:000    (Xsdt: A03C90A0, Rsdt: A03C9028)
+7:011  0:000    A03C90A0: 'XSDT', 'WN09', Rev: 1, Len: 196
+7:011  0:000    A03C9028: 'RSDT', 'WN09', Rev: 1, Len: 116
+7:011  0:000    Tables in Xsdt: 20
+7:011  0:000    0. A03E0148: 'FACP', 'WN09', Rev: 5, Len: 268
+7:011  0:000        (Dsdt: A03C91F8, Facs: A0D17F80, XDsdt: A03C91F8, XFacs: 0)
+7:011  0:000        A03C91F8: 'DSDT', 'WN09', Rev: 2, Len: 94028
+7:014  0:002        A0D17F80: 'FACS', Ver: 2, Len: 64
+7:014  0:000    1. A03E0258: 'APIC', 'WN09', Rev: 3, Len: 132
+7:014  0:000    2. A03E02E0: 'FPDT', 'WN09', Rev: 1, Len: 68
+7:014  0:000    3. A03E0328: 'FIDT', 'WN09', Rev: 1, Len: 156
+7:014  0:000    4. A03E03C8: 'MCFG', 'WN09', Rev: 1, Len: 60
+7:014  0:000    5. A03E0408: 'HPET', 'WN09', Rev: 1, Len: 56
+7:014  0:000    6. A03E0440: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+7:014  0:000    7. A03E0758: 'UEFI', '', Rev: 1, Len: 66
+7:014  0:000    8. A03E07A0: 'MSDM', 'WN09', Rev: 3, Len: 85
+7:014  0:000    9. A03E07F8: 'SSDT', 'zpodd', Rev: 1, Len: 404
+7:014  0:000    10. A03E0990: 'LPIT', '', Rev: 1, Len: 148
+7:014  0:000    11. A03E0A28: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3197
+7:014  0:000    12. A03E16A8: 'ASF!', ' HCG', Rev: 32, Len: 160
+7:014  0:000    13. A03E1748: 'SLIC', 'WN09', Rev: 1, Len: 374
+7:014  0:000    14. A03E18C0: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1337
+7:014  0:000    15. A03E1E00: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+7:014  0:000    16. A03E2978: 'SSDT', 'SaSsdt', Rev: 2, Len: 23620
+7:014  0:000    17. A03E85C0: 'DMAR', 'WN09', Rev: 1, Len: 212
+7:014  0:000    18. A03E8698: 'CSRT', 'WN09', Rev: 1, Len: 196
+7:014  0:000    19. A03E8760: 'BGRT', 'WN09', Rev: 1, Len: 56
+7:014  0:000    Tables in Rsdt: 20
+7:014  0:000    0. A03C9170: 'FACP', 'WN09', Rev: 2, Len: 132
+7:014  0:000        (Dsdt: A03C91F8, Facs: A0D17F40)
+7:014  0:000        A03C91F8: 'DSDT', 'WN09', Rev: 2, Len: 94028
+7:016  0:002        A0D17F40: 'FACS', Ver: 0, Len: 64
+7:016  0:000    1. A03E0258: 'APIC', 'WN09', Rev: 3, Len: 132
+7:016  0:000    2. A03E02E0: 'FPDT', 'WN09', Rev: 1, Len: 68
+7:016  0:000    3. A03E0328: 'FIDT', 'WN09', Rev: 1, Len: 156
+7:016  0:000    4. A03E03C8: 'MCFG', 'WN09', Rev: 1, Len: 60
+7:016  0:000    5. A03E0408: 'HPET', 'WN09', Rev: 1, Len: 56
+7:016  0:000    6. A03E0440: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+7:016  0:000    7. A03E0758: 'UEFI', '', Rev: 1, Len: 66
+7:016  0:000    8. A03E07A0: 'MSDM', 'WN09', Rev: 3, Len: 85
+7:016  0:000    9. A03E07F8: 'SSDT', 'zpodd', Rev: 1, Len: 404
+7:016  0:000    10. A03E0990: 'LPIT', '', Rev: 1, Len: 148
+7:016  0:000    11. A03E0A28: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3197
+7:016  0:000    12. A03E16A8: 'ASF!', ' HCG', Rev: 32, Len: 160
+7:016  0:000    13. A03E1748: 'SLIC', 'WN09', Rev: 1, Len: 374
+7:016  0:000    14. A03E18C0: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1337
+7:016  0:000    15. A03E1E00: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+7:016  0:000    16. A03E2978: 'SSDT', 'SaSsdt', Rev: 2, Len: 23620
+7:016  0:000    17. A03E85C0: 'DMAR', 'WN09', Rev: 1, Len: 212
+7:016  0:000    18. A03E8698: 'CSRT', 'WN09', Rev: 1, Len: 196
+7:016  0:000    19. A03E8760: 'BGRT', 'WN09', Rev: 1, Len: 56
+7:016  0:000  Found UEFI Acpi 1.0 RSDP at A03C9000
+7:016  0:000  Printing ACPI tables from RSDP A03C9000 ...
+7:016  0:000   A03C9000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+7:016  0:000    (Xsdt: A03C90A0, Rsdt: A03C9028)
+7:016  0:000    A03C90A0: 'XSDT', 'WN09', Rev: 1, Len: 196
+7:016  0:000    A03C9028: 'RSDT', 'WN09', Rev: 1, Len: 116
+7:016  0:000    Tables in Xsdt: 20
+7:016  0:000    0. A03E0148: 'FACP', 'WN09', Rev: 5, Len: 268
+7:016  0:000        (Dsdt: A03C91F8, Facs: A0D17F80, XDsdt: A03C91F8, XFacs: 0)
+7:016  0:000        A03C91F8: 'DSDT', 'WN09', Rev: 2, Len: 94028
+7:018  0:002        A0D17F80: 'FACS', Ver: 2, Len: 64
+7:018  0:000    1. A03E0258: 'APIC', 'WN09', Rev: 3, Len: 132
+7:018  0:000    2. A03E02E0: 'FPDT', 'WN09', Rev: 1, Len: 68
+7:018  0:000    3. A03E0328: 'FIDT', 'WN09', Rev: 1, Len: 156
+7:018  0:000    4. A03E03C8: 'MCFG', 'WN09', Rev: 1, Len: 60
+7:018  0:000    5. A03E0408: 'HPET', 'WN09', Rev: 1, Len: 56
+7:018  0:000    6. A03E0440: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+7:018  0:000    7. A03E0758: 'UEFI', '', Rev: 1, Len: 66
+7:018  0:000    8. A03E07A0: 'MSDM', 'WN09', Rev: 3, Len: 85
+7:018  0:000    9. A03E07F8: 'SSDT', 'zpodd', Rev: 1, Len: 404
+7:018  0:000    10. A03E0990: 'LPIT', '', Rev: 1, Len: 148
+7:018  0:000    11. A03E0A28: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3197
+7:018  0:000    12. A03E16A8: 'ASF!', ' HCG', Rev: 32, Len: 160
+7:018  0:000    13. A03E1748: 'SLIC', 'WN09', Rev: 1, Len: 374
+7:018  0:000    14. A03E18C0: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1337
+7:018  0:000    15. A03E1E00: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+7:018  0:000    16. A03E2978: 'SSDT', 'SaSsdt', Rev: 2, Len: 23620
+7:018  0:000    17. A03E85C0: 'DMAR', 'WN09', Rev: 1, Len: 212
+7:018  0:000    18. A03E8698: 'CSRT', 'WN09', Rev: 1, Len: 196
+7:018  0:000    19. A03E8760: 'BGRT', 'WN09', Rev: 1, Len: 56
+7:018  0:000    Tables in Rsdt: 20
+7:018  0:000    0. A03C9170: 'FACP', 'WN09', Rev: 2, Len: 132
+7:018  0:000        (Dsdt: A03C91F8, Facs: A0D17F40)
+7:018  0:000        A03C91F8: 'DSDT', 'WN09', Rev: 2, Len: 94028
+7:021  0:002        A0D17F40: 'FACS', Ver: 0, Len: 64
+7:021  0:000    1. A03E0258: 'APIC', 'WN09', Rev: 3, Len: 132
+7:021  0:000    2. A03E02E0: 'FPDT', 'WN09', Rev: 1, Len: 68
+7:021  0:000    3. A03E0328: 'FIDT', 'WN09', Rev: 1, Len: 156
+7:021  0:000    4. A03E03C8: 'MCFG', 'WN09', Rev: 1, Len: 60
+7:021  0:000    5. A03E0408: 'HPET', 'WN09', Rev: 1, Len: 56
+7:021  0:000    6. A03E0440: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+7:021  0:000    7. A03E0758: 'UEFI', '', Rev: 1, Len: 66
+7:021  0:000    8. A03E07A0: 'MSDM', 'WN09', Rev: 3, Len: 85
+7:021  0:000    9. A03E07F8: 'SSDT', 'zpodd', Rev: 1, Len: 404
+7:021  0:000    10. A03E0990: 'LPIT', '', Rev: 1, Len: 148
+7:021  0:000    11. A03E0A28: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 3197
+7:021  0:000    12. A03E16A8: 'ASF!', ' HCG', Rev: 32, Len: 160
+7:021  0:000    13. A03E1748: 'SLIC', 'WN09', Rev: 1, Len: 374
+7:021  0:000    14. A03E18C0: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1337
+7:021  0:000    15. A03E1E00: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+7:021  0:000    16. A03E2978: 'SSDT', 'SaSsdt', Rev: 2, Len: 23620
+7:021  0:000    17. A03E85C0: 'DMAR', 'WN09', Rev: 1, Len: 212
+7:021  0:000    18. A03E8698: 'CSRT', 'WN09', Rev: 1, Len: 196
+7:021  0:000    19. A03E8760: 'BGRT', 'WN09', Rev: 1, Len: 56
