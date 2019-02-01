@@ -97,18 +97,28 @@ Now graphics, brightness controls and WiFi are working, but Audio is not working
 
 The other patches that are needed such as GFX0 to IGPU & BOD3 to HDAU are done by clover hotpatch in the config.plist
 
-Refer Rehabman guide for more details [here](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/ "here")
+*Refer Rehabman guide for more details [here](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/ "here")*
 
 ## 6. Power Management 
-Broadwell CPU's dont need to generate the SSDT using ssdtPRGen.sh script by Pike R. Alpha
-The PM is done by the SSDT-XCPM which is already in the CLOVER/ACPI/Patched folder
+Broadwell CPU's dont need to generate the SSDT using ssdtPRGen.sh script by Pike R. Alpha.
+The Power Management is implemented by the SSDT-XCPM which is already in the CLOVER/ACPI/Patched folder
 
 But we need to disable hibernation since its not supported, execute the following commands,  
 `sudo pmset -a hibernatemode 0`  
 `sudo rm /var/vm/sleepimage`  
 `sudo mkdir /var/vm/sleepimage`  
 
-Refer Rehabman guide for more details [here](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/ "here")
+*Refer Rehabman guide for more details [here](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/ "here")*
+
+## FINISH
+The Hackintosh should have everything working by now,
+- Audio
+- Graphics (Brightness Control)
+- Sleep/Wake
+- Ethernet
+- WiFi
+
+
 
 ##  Other
 ### Sleep/Wake Issue
