@@ -33,7 +33,7 @@ Update BIOS to Latest, A10 as of writing
 
 7. Run AFUWINGUI & click open and select extracted BIOS ROM file
 8. Navigate to the Setup tab and set the Block Options to Program All Blocks, it should look like this now
-![](https://www.tonymacx86.com/attachments/flashing-the-bios-png.193866/)
+![afuwin64](https://user-images.githubusercontent.com/22576836/52126441-6203c280-2655-11e9-847a-f20b0a97583d.png)
 
 9. Click Flash and wait till it finishes and reboot
 10. Will prompt FN+X to enter normal mode and enter Service Tag, model
@@ -49,7 +49,7 @@ And now you have successfully changed the DVMT settings anf fixed the kernel pan
 2. Download [this](https://sourceforge.net/projects/win32diskimager/ "this")
 3. Extract the .raw image to desktop 
 4. Open win32diskimager and plug a 16GB+ USB & select the Mac OSX image and click write
-![](https://olarila.com/forum/download/file.php?id=17254)
+![win32disk](https://user-images.githubusercontent.com/22576836/52126435-5ca67800-2655-11e9-8c0d-66879abaadba.png)
 5. Replace EFI with mine, and add the kexts to /EFI/Clover/kexts/Other
 
 ## 3. Install OSX
