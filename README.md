@@ -8,7 +8,7 @@
 - WiFi AR9285 (replaced stock wifi card DW1704)
 - Audio ALC 255 (3234)
 
-###Pre Conditions 
+### Pre Conditions 
 Set BIOS as follows,
 - Intel SpeedStep: Enabled
 - Virtualization: Disabled
@@ -28,7 +28,7 @@ Update BIOS to Latest, A10 as of writing
 3. Extract afuwin64.zip file to desktop & put the BIOS File in the afuwin64 folder
 4. Extract the EFI-shell.zip in the tools folder to a USB drive
 5. Open a Command Prompt in Windows
-6. To extract the ROM file, run the command `/writeromfile` as follows,
+6. To extract the ROM file, run the command `/writeromfile` as follows,  
 `C:\Users\ABC\Desktop\afuwin64\3443A10.EXE /writeromfile`
 
 7. Run AFUWINGUI & click open and select extracted BIOS ROM file
@@ -37,7 +37,7 @@ Update BIOS to Latest, A10 as of writing
 
 9. Click Flash and wait till it finishes and reboot
 10. Will prompt FN+X to enter normal mode and enter Service Tag, model
-11. Boot system with the USB and select UEFI Boot, at the grub prompt, enter these commands, hit enter after each command, then exit and reboot.
+11. Boot system with the USB and select UEFI Boot, at the grub prompt, enter these commands, hit enter after each command, then exit and reboot.  
 `setup_var 0x229 0x3`  
 `setup_var 0x22A 0x3`  
 
@@ -75,18 +75,18 @@ Now graphics, brightness controls and WiFi are working, but Audio is not working
 ## 5. DSDT & SSDT Patching
 1. Download and install MaciASL [here](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/ "here")
 2. Download iASL from [here](https://bitbucket.org/RehabMan/acpica/downloads/ "here")
-3. Assuming downloaded iASL is in your downloads folder, execute the following commands in terminal
-`cd ~/Downloads`
-`unzip iasl.zip`
-`sudo cp iasl /usr/bin`
+3. Assuming downloaded iASL is in your downloads folder, execute the following commands in terminal  
+`cd ~/Downloads`  
+`unzip iasl.zip`  
+`sudo cp iasl /usr/bin`  
 
 4. Reboot to Clover and press F4, this will extract the relevant files to the EFI origin folder
 5. Now boot to Mac and mount EFI partition
 6. Go to EFI/Clover/ACPI/Origin and copy DSDT.aml to the Desktop
 7. Download the refs.txt from the tools folder to the desktop
-8. Execute the following commands,
-`cd Desktop`
-`iasl -da -dl -fe refs.txt DSDT.aml`
+8. Execute the following commands,  
+`cd Desktop`  
+`iasl -da -dl -fe refs.txt DSDT.aml`  
 
 9. Assuming you have the decompiled DSDT.dsl file on your desktop open the DSDT in MaciASL
 10. Patch the DSDT with the following,
