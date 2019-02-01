@@ -1,4 +1,4 @@
-# Mac OSX on Dell-Inspiron-3543 (Hackintosh Guide)
+# Mac OSX on Dell-Inspiron-3543 (Full Hackintosh Guide)
 
 # Laptop Specs
 - CPU Intel i3-5005u
@@ -53,8 +53,25 @@ And now you have successfully changed the DVMT settings anf fixed the kernel pan
 
 ## 3. Install OSX
 
-1. Boot to created USB OSX installer
-2. Follow the onscreen guide and Format Hard Drive and install
+1. When Clover boot screen appears, choose Install OS X El Capitan/Sierra
+2. The system will then boot into the OS X Installer
+3. Choose your language and hit -> to continue
+4. For a new installation of OS X, you MUST erase and format the destination drive according to the following steps before continuing. 
+	a. From the menu bar, click Utilities -> Choose Disk Utility
+	b. Highlight your target hard drive for the El Capitan installation in left column.
+	 c. Click Erase tab
+	 d. Under Scheme: GUID Partition Map
+	 e. Under Name: type HD (You can name anything you want)
+	 f. Under Format: choose Mac OS Extended (Journaled)
+	 g. Click Erase
+	 h. Close Disk Utility  
+5. Click Continue, Continue, Agree
+6. Select Macintosh SSD, or name of your existing drive, where you want to install El Capitan and click Continue
+7. Upon completion, system will restart
+8. Press the F12 to choose boot device
+9. Choose  under UEFI Boot:
+10. When Clover boot screen appears, choose Macintosh SSD or name of your existing drive
+
 
 ## 4. Post Install
 
@@ -79,8 +96,8 @@ Now graphics, brightness controls and WiFi are working, but Audio is not working
 `unzip iasl.zip`  
 `sudo cp iasl /usr/bin`  
 
-4. Reboot to Clover and press F4, this will extract the relevant files to the EFI origin folder
-5. Now boot to Mac and mount EFI partition
+4. Reboot to Clover and press F4, this will extract the relevant files to the EFI origin folder.
+5. Now boot to Mac and mount EFI partition.
 6. Go to EFI/Clover/ACPI/Origin and copy DSDT.aml to the Desktop
 7. Download the refs.txt from the tools folder to the desktop
 8. Execute the following commands,  
@@ -116,7 +133,9 @@ The Hackintosh should have everything working by now,
 - Sleep/Wake
 - Ethernet
 - WiFi
+- Not working SD Card Reader
 
+![info](https://user-images.githubusercontent.com/22576836/52132699-bc0c8400-2665-11e9-9161-e020b3253017.png)
 
 
 ##  Other
@@ -125,4 +144,4 @@ If this issue exist please go to `/Library/Preferences` and delete all the com.a
 
 macOS will re-generate the com.apple.PowerManagement* files
 
-*Refer [here](https://www.tonymacx86.com/threads/solved-sleep-shutdown.260947/post-1814160 "here") for more details *
+*Refer [here](https://www.tonymacx86.com/threads/solved-sleep-shutdown.260947/post-1814160 "here") for more details*
