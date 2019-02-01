@@ -21,8 +21,7 @@ Set BIOS as follows,
 ## 1. Change DVMT settings
 Update BIOS to Latest, A10 as of writing
 
-**NOTE = Below procedure will put laptop into Manufacturing Level, So Obtain your Service Tag (You can find the sticker under the laptop, 7 Chars) **
-
+** NOTE = Below procedure will put laptop into Manufacturing Level, So Obtain your Service Tag (You can find the sticker under the laptop, 7 Chars) **
 1. Download the BIOS file
 2. Download the AMI Firmware Update Utility afuwin64.zip file
 3. Extract afuwin64.zip file to desktop & put the BIOS File in the afuwin64 folder
@@ -50,7 +49,7 @@ And now you have successfully changed the DVMT settings anf fixed the kernel pan
 3. Extract the .raw image to desktop 
 4. Open win32diskimager and plug a 16GB+ USB & select the Mac OSX image and click write
 ![win32disk](https://user-images.githubusercontent.com/22576836/52126435-5ca67800-2655-11e9-8c0d-66879abaadba.png)
-5. Replace EFI with mine, and add the kexts to /EFI/Clover/kexts/Other
+5. Replace EFI with my Initial EFI Install.
 
 ## 3. Install OSX
 
@@ -60,10 +59,10 @@ And now you have successfully changed the DVMT settings anf fixed the kernel pan
 ## 4. Post Install
 
 1. Assuming the USB installer is still plugged in, open Olarila Image/Files folder and copy the ESP Mounter Pro app to the Desktop .
-2. Copy the EFI folder of the USB OSX installer to the desktop and eject it
+2. Copy the EFI Post Install to the desktop
 3. Open the ESP Mounter Pro app and mount the EFI folder
-4. Delete the folders/files in the EFI partition and copy the EFI from the desktop that you copied from the USB OSX installer
-5. Go to /EFI/Clover/kexts/Other and move all the kexts to /Library/Extensions
+4. Delete the folders/files in the EFI partition and copy the EFI from the desktop 
+5. Download the kexts and move all the kexts to /Library/Extensions
 6. Open terminal and execute the below commands and reboot,
 
 `sudo chmod -R 755 /Library/Extensions`  
@@ -126,6 +125,4 @@ If this issue exist please go to `/Library/Preferences` and delete all the com.a
 
 macOS will re-generate the com.apple.PowerManagement* files
 
-*thanks to [this](https://www.tonymacx86.com/threads/solved-sleep-shutdown.260947/post-1814160 "this")*
-
-
+*Refer [here](https://www.tonymacx86.com/threads/solved-sleep-shutdown.260947/post-1814160 "here") for more details *
