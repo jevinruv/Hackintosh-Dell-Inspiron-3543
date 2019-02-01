@@ -38,7 +38,8 @@ Update BIOS to Latest, A10 as of writing
 9. Click Flash and wait till it finishes and reboot
 10. Will prompt FN+X to enter normal mode and enter Service Tag, model
 11. Boot system with the USB and select UEFI Boot, at the grub prompt, enter these commands, hit enter after each command, then exit and reboot.
-`setup_var 0x229 0x3` and `setup_var 0x22A 0x3`
+`setup_var 0x229 0x3`  
+`setup_var 0x22A 0x3`  
 
 And now you have successfully changed the DVMT settings anf fixed the kernel panic for graphics
 
@@ -65,14 +66,36 @@ And now you have successfully changed the DVMT settings anf fixed the kernel pan
 5. Go to /EFI/Clover/kexts/Other and move all the kexts to /Library/Extensions
 6. Open terminal and execute the below commands and reboot,
 
-`sudo chmod -R 755 /Library/Extensions`
-`sudo chown -R root:wheel /Library/Extensions`
-`sudo kextcache -i /`
+`sudo chmod -R 755 /Library/Extensions`  
+`sudo chown -R root:wheel /Library/Extensions`  
+`sudo kextcache -i /`  
 
 Now graphics, brightness controls and WiFi are working, but Audio is not working yet, DSDT patching is needed.
 
 ## 5. DSDT & SSDT Patching
+1. Download and install MaciASL [here](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/ "here")
+2. Download iASL from [here](https://bitbucket.org/RehabMan/acpica/downloads/ "here")
+3. Assuming downloaded iASL is in your downloads folder, execute the following commands in terminal
+`cd ~/Downloads`
+`unzip iasl.zip`
+`sudo cp iasl /usr/bin`
 
+4. Reboot to Clover and press F4, this will extract the relevant files to the EFI origin folder
+5. Now boot to Mac and mount EFI partition
+6. Go to EFI/Clover/ACPI/Origin and copy DSDT.aml to the Desktop
+7. Download the refs.txt from the tools folder to the desktop
+8. Execute the following commands,
+`cd Desktop`
+`iasl -da -dl -fe refs.txt DSDT.aml`
+
+9. Assuming you have the decompiled DSDT.dsl file on your desktop open the DSDT in MaciASL
+10. Patch the DSDT with the following,
+`USB3_PRW 0x6D (Instant Wake)`
+`IRQ Fix`
+
+
+
+Refer Rehabman guide for more details [here](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/ "here")
 
 ##  Other
 ### Sleep/Wake Issue
