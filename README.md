@@ -1,14 +1,19 @@
 # Mac OSX on Dell-Inspiron-3543 (Full Hackintosh Guide)
 
+
 # Laptop Specs
-- CPU Intel i3-5005u
+
+- CPU Intel i3-5005u Broadwell 
 - Graphics Intel HD 5500
 - RAM 8GB
 - HDD 500GB
 - WiFi AR9285 (replaced stock wifi card DW1704)
 - Audio ALC 255 (3234)
+- Ethernet RTL8411b
+
 
 ### Pre Conditions 
+
 Set BIOS as follows,
 - Intel SpeedStep: Enabled
 - Virtualization: Disabled
@@ -18,7 +23,9 @@ Set BIOS as follows,
 - SATA Operation: AHCI
 - Computrace: Deactivate
 
+
 ## 1. Change DVMT settings
+
 Update BIOS to Latest, A10 as of writing
 
 ** NOTE = Below procedure will put laptop into Manufacturing Level, So Obtain your Service Tag (You can find the sticker under the laptop, 7 Chars) **
@@ -42,6 +49,7 @@ Update BIOS to Latest, A10 as of writing
 
 And now you have successfully changed the DVMT settings anf fixed the kernel panic for graphics
 
+
 ## 2. Create OSX Installer
 
 1. Download Mojave (I am using 10.14.1) from Olarila [here](https://olarila.com/forum/viewtopic.php?f=51&t=6743 "here")
@@ -50,6 +58,7 @@ And now you have successfully changed the DVMT settings anf fixed the kernel pan
 4. Open win32diskimager and plug a 16GB+ USB & select the Mac OSX image and click write
 ![win32disk](https://user-images.githubusercontent.com/22576836/52126435-5ca67800-2655-11e9-8c0d-66879abaadba.png)
 5. Replace EFI with my Initial EFI Install.
+
 
 ## 3. Install OSX
 
@@ -88,7 +97,9 @@ And now you have successfully changed the DVMT settings anf fixed the kernel pan
 
 Now graphics, brightness controls and WiFi are working, but Audio is not working yet, DSDT patching is needed.
 
+
 ## 5. DSDT & SSDT Patching
+
 1. Download and install MaciASL [here](https://bitbucket.org/RehabMan/os-x-maciasl-patchmatic/downloads/ "here")
 2. Download iASL from [here](https://bitbucket.org/RehabMan/acpica/downloads/ "here")
 3. Assuming downloaded iASL is in your downloads folder, execute the following commands in terminal  
@@ -115,7 +126,9 @@ The other patches that are needed such as GFX0 to IGPU & BOD3 to HDAU are done b
 
 *Refer Rehabman guide for more details [here](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/ "here")*
 
+
 ## 6. Power Management 
+
 Broadwell CPU's dont need to generate the SSDT using ssdtPRGen.sh script by Pike R. Alpha.
 The Power Management is implemented by the SSDT-XCPM which is already in the CLOVER/ACPI/Patched folder
 
@@ -126,19 +139,23 @@ But we need to disable hibernation since its not supported, execute the followin
 
 *Refer Rehabman guide for more details [here](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/ "here")*
 
+
 ## FINISH
+
 The Hackintosh should have everything working by now,
 - Audio
 - Graphics (Brightness Control)
 - Sleep/Wake
 - Ethernet
 - WiFi
+- Battery
 - Not working SD Card Reader
 
 ![info](https://user-images.githubusercontent.com/22576836/52132699-bc0c8400-2665-11e9-9161-e020b3253017.png)
 
 
 ##  Other
+
 ### Sleep/Wake Issue
 If this issue exist please go to `/Library/Preferences` and delete all the com.apple.PowerManagement.* files then reboot
 
