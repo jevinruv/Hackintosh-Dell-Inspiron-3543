@@ -11,17 +11,43 @@
 - Audio ALC 255 (3234)
 - Ethernet RTL8411b
 
+## Working
+
+- Native Power Management
+- USB ports
+- Touchscreen
+- Battery status
+- Keyboard & TrackPad
+- Internal Audio & Microphone
+- Headphone Jack
+- HDMI Port
+- Graphics (Brightness Control)
+- Sleep/Wake
+- Ethernet
+- WiFi
+- Battery
+
+
+## Not working
+
+- SD Card Reader
+
+![info](https://user-images.githubusercontent.com/22576836/52132699-bc0c8400-2665-11e9-9161-e020b3253017.png)
+
 
 ### Pre Conditions 
 
-Set BIOS as follows,
-- Intel SpeedStep: Enabled
-- Virtualization: Disabled
-- Integrated NIC: Enabled
-- USB Emulation: Enabled
-- USB Wake Support: Disabled
-- SATA Operation: AHCI
-- Computrace: Deactivate
+**BIOS Configuration**
+
+Bios Config | Setting 
+:---:| :---:
+Intel SpeedStep | Disabled
+Virtualization    | Disabled
+Integrated NIC | Disabled
+USB Emulation | Enabled
+USB Wake Support | Disabled
+SATA Operation | AHCI
+Computrace | Deactivate
 
 
 ## 1. Change DVMT settings
@@ -48,6 +74,7 @@ Update BIOS to Latest, A10 as of writing
 `setup_var 0x22A 0x3`  
 
 And now you have successfully changed the DVMT settings anf fixed the kernel panic for graphics
+
 
 
 ## 2. Create OSX Installer
@@ -138,20 +165,6 @@ But we need to disable hibernation since its not supported, execute the followin
 `sudo mkdir /var/vm/sleepimage`  
 
 *Refer Rehabman guide for more details [here](https://www.tonymacx86.com/threads/guide-native-power-management-for-laptops.175801/ "here")*
-
-
-## FINISH
-
-The Hackintosh should have everything working by now,
-- Audio
-- Graphics (Brightness Control)
-- Sleep/Wake
-- Ethernet
-- WiFi
-- Battery
-- Not working SD Card Reader
-
-![info](https://user-images.githubusercontent.com/22576836/52132699-bc0c8400-2665-11e9-9161-e020b3253017.png)
 
 
 ##  Other
