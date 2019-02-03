@@ -92,15 +92,15 @@ And now you have successfully changed the DVMT settings anf fixed the kernel pan
 1. When Clover boot screen appears, choose Install OS X El Capitan/Sierra
 2. The system will then boot into the OS X Installer
 3. Choose your language and hit -> to continue
-4. For a new installation of OS X, you MUST erase and format the destination drive according to the following steps before continuing. 
-	a. From the menu bar, click Utilities -> Choose Disk Utility
-	b. Highlight your target hard drive for the El Capitan installation in left column.
-	 c. Click Erase tab
-	 d. Under Scheme: GUID Partition Map
-	 e. Under Name: type HD (You can name anything you want)
-	 f. Under Format: choose Mac OS Extended (Journaled)
-	 g. Click Erase
-	 h. Close Disk Utility  
+4. For a new installation of OS X, you MUST erase and format the destination drive according to the following steps before continuing.   
+	a. From the menu bar, click Utilities -> Choose Disk Utility  
+	b. Highlight your target hard drive for the El Capitan installation in left column.  
+	c. Click Erase tab  
+	d. Under Scheme: GUID Partition Map  
+	e. Under Name: type HD (You can name anything you want)  
+	f. Under Format: choose Mac OS Extended (Journaled)  
+	g. Click Erase  
+	h. Close Disk Utility  
 5. Click Continue, Continue, Agree
 6. Select Macintosh SSD, or name of your existing drive, where you want to install El Capitan and click Continue
 7. Upon completion, system will restart
