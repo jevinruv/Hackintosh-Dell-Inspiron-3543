@@ -41,9 +41,9 @@
 
 Bios Config | Setting 
 :---:| :---:
-Intel SpeedStep | Disabled
+Intel SpeedStep | Enabled
 Virtualization    | Disabled
-Integrated NIC | Disabled
+Integrated NIC | Enabled
 USB Emulation | Enabled
 USB Wake Support | Disabled
 SATA Operation | AHCI
