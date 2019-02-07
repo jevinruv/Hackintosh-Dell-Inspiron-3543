@@ -175,3 +175,11 @@ If this issue exist please go to `/Library/Preferences` and delete all the com.a
 macOS will re-generate the com.apple.PowerManagement* files
 
 *Refer [here](https://www.tonymacx86.com/threads/solved-sleep-shutdown.260947/post-1814160 "here") for more details*
+
+## Keyboard Layout
+
+Edited WN09.DSDT and added RM,oem-table-id", "WN09a"  
+
+*Refer [here](https://www.insanelymac.com/forum/topic/305030-guide-how-to-fix-brightness-hotkeys-in-dsdt/?do=findComment&comment=2163236 "here") for more details*
+
+
